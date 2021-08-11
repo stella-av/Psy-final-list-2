@@ -1121,6 +1121,7 @@ const Filler_info1 = [
         optionRight: "strongly justified",
         QUD: "The witness considers it is possible that she found ten of the shoes under the table.",
         question: "Do you agree with the judge?",
+        correct_judgement: "1", //obv valid
 
     }
 ];
@@ -1130,6 +1131,7 @@ const Filler_info2 = [
         optionRight: "strongly justified",
         QUD: "The witness considers it is possible that she found ten of the shoes under the table.",
         question: "Do you agree with the judge?",
+        correct_judgement: "5", //obv invalid
 
     }
 ];
@@ -1139,6 +1141,7 @@ const Filler_info3 = [
         optionRight: "strongly justified",
         QUD: "The witness thinks the number of shoes she found under the table is comparably high.",
         question: "Do you agree with the judge?",
+        correct_judgement: "2", //plausible
 
     }
 ];
@@ -1148,6 +1151,7 @@ const Filler_info4 = [
         optionRight: "strongly justified",
         QUD: "The witness thinks the number of shoes she found under the table is comparably high.",
         question: "Do you agree with the judge?",
+        correct_judgement: "3",
 
     }
 ];
@@ -1193,6 +1197,7 @@ const Filler_info9 = [
         optionRight: "strongly justified",
         QUD: "The witness thinks the number of pills she found on the table is comparably high.",
         question: "Do you agree with the judge?",
+        //correct: "3",
 
     }
 ];

@@ -18,9 +18,10 @@ $("document").ready(function() {
             intro,
             instructions,
 
+            /*
             // COND 4 (WHAT SUP)
             //sentence 1
-            What1, // first screen               // no next button
+            What1, // first screen               
             SUP2,
             INF3,
 
@@ -588,6 +589,7 @@ $("document").ready(function() {
              Filler_Answer48,
              Filler_INF48,
  
+             */
              //9
              Filler_Polar3,
              Filler_Answer9,
@@ -606,7 +608,7 @@ $("document").ready(function() {
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "directLink",
+            deployMethod: "debug",
             contact_email: "mvillaavila@uos.de",
             //prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
