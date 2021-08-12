@@ -18,14 +18,9 @@ $("document").ready(function() {
             intro,
             instructions,
 
-            /*
             // COND 4 (WHAT SUP)
             //sentence 1
-<<<<<<< HEAD
             What1, // first screen               
-=======
-            What1, 
->>>>>>> 879d8a8e6f4adf692c8894a74d1bed128107ec79
             SUP2,
             INF3,
 
@@ -581,7 +576,6 @@ $("document").ready(function() {
              Filler_Answer48,
              Filler_INF48,
  
-             */
              //9
              Filler_Polar3,
              Filler_Answer9,
