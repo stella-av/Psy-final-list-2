@@ -24,6 +24,226 @@ const third_screen = [
 
 //MAIN TRIALS **CORRECT ORDER**
 
+//POLAR QUD 
+const info_Pol1 = [
+    {
+        option1: "Next",
+		question: "Did you find at most ten of the diamonds under the bed?",
+    }
+];
+const info_Pol2 = [
+    {
+        option1: "Next",
+		question: "Did you find at most ten of the diamonds under the bed?",
+    }
+];
+const info_Pol3 = [
+    {
+        option1: "Next",
+		question: "Did you find at most ten of the coins on the desk?",
+    }
+];
+const info_Pol4 = [
+    {
+        option1: "Next",
+		question: "Did you find at most ten of the coins on the desk?",
+    }
+];
+const info_Pol5 = [
+    {
+        option1: "Next",
+		question: "Did you find at most ten of the knives on the floor?",
+    }
+];
+const info_Pol6 = [
+    {
+        option1: "Next",
+		question: "Did you find at most ten of the knives on the floor?",
+    }
+];
+const info_Pol7 = [
+    {
+        option1: "Next",
+		question: "Did you see at most ten of the masks in the closet?",
+    }
+];
+const info_Pol8 = [
+    {
+        option1: "Next",
+		question: "Did you see at most ten of the masks in the closet?",
+    }
+];
+const info_Pol9 = [
+    {
+        option1: "Next",
+		question: "Did you see at most ten of the men in the garden?",
+    }
+];
+const info_Pol10 = [
+    {
+        option1: "Next",
+		question: "Did you see at most ten of the men in the garden?",
+    }
+];
+const info_Pol11 = [
+    {
+        option1: "Next",
+		question: "Did you hear at most ten of the screams in the kitchen?",
+    }
+];
+const info_Pol12 = [
+    {
+        option1: "Next",
+		question: "Did you hear at most ten of the screams in the kitchen?",
+    }
+];
+//WHAT QUD
+const info_What1 = [
+    {
+        option1: "Next",
+		question: "What did you find under the bed?",
+    }
+];
+const info_What2 = [
+    {
+        option1: "Next",
+		question: "What did you find under the bed?",
+    }
+];
+const info_What3 = [
+    {
+        option1: "Next",
+		question: "What did you find on the desk?",
+    }
+];
+const info_What4 = [
+    {
+        option1: "Next",
+		question: "What did you find on the desk?",
+    }
+];
+const info_What5 = [
+    {
+        option1: "Next",
+		question: "What did you see on the floor?",
+    }
+];
+const info_What6 = [
+    {
+        option1: "Next",
+		question: "What did you see on the floor?",
+    }
+];
+const info_What7 = [
+    {
+        option1: "Next",
+		question: "What did you see in the closet?",
+    }
+];
+const info_What8 = [
+    {
+        option1: "Next",
+		question: "What did you see in the closet?",
+    }
+];
+const info_What9 = [
+    {
+        option1: "Next",
+		question: "What did you see in the garden?",
+    }
+];
+const info_What10 = [
+    {
+        option1: "Next",
+		question: "What did you see in the garden?",
+    }
+];
+const info_What11 = [
+    {
+        option1: "Next",
+		question: "What did you hear in the kitchen?",
+    }
+];
+const info_What12 = [
+    {
+        option1: "Next",
+		question: "What did you hear in the kitchen?",
+    }
+];
+//How Many QUD
+const info_HM1 = [
+    {
+        option1: "Next",
+		question: "How many of the diamonds did you find under the bed?",
+    }
+];
+const info_HM2 = [
+    {
+        option1: "Next",
+		question: "How many of the diamonds did you find under the bed?",
+    }
+];
+const info_HM3 = [
+    {
+        option1: "Next",
+		question: "How many of the coins did you find on the desk?",
+    }
+];
+const info_HM4 = [
+    {
+        option1: "Next",
+		question: "How many of the coins did you find on the desk?",
+    }
+];
+const info_HM5 = [
+    {
+        option1: "Next",
+		question: "How many of the knives did you see on the floor?",
+    }
+];
+const info_HM6 = [
+    {
+        option1: "Next",
+		question: "How many of the knives did you see on the floor?",
+    }
+];
+const info_HM7 = [
+    {
+        option1: "Next",
+		question: "How many of the masks did you see in the closet?",
+    }
+];
+const info_HM8 = [
+    {
+        option1: "Next",
+		question: "How many of the masks did you see in the closet?",
+    }
+];
+const info_HM9 = [
+    {
+        option1: "Next",
+		question: "How many of the shots did you hear in the garden?",
+    }
+];
+const info_HM10 = [
+    {
+        option1: "Next",
+		question: "How many of the shots did you hear in the garden?",
+    }
+];
+const info_HM11 = [
+    {
+        option1: "Next",
+		question: "How many of the screams did you hear in the kitchen?",
+    }
+];
+const info_HM12 = [
+    {
+        option1: "Next",
+		question: "How many of the screams did you hear in the kitchen?",
+    }
+];
+
 //SUP Answers
 const trial_info_SUP1 = [
     {
@@ -605,6 +825,1311 @@ const trial_info_INF36 = [
 ];
 
 // FILLER ITEMS **CORRECT**
+
+//Screen1
+
+//Polar Questions
+const Filler_Polar1 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar1.length,
+		name: 'Filler_Polar1',
+		data: F_Polar1,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar2 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar2.length,
+		name: 'Filler_Polar2',
+		data: F_Polar2,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar3 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar3.length,
+		name: 'Filler_Polar3',
+		data: F_Polar3,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar4 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar4.length,
+		name: 'Filler_Polar4',
+		data: F_Polar4,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar5 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar5.length,
+		name: 'Filler_Polar5',
+		data: F_Polar5,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar6 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar6.length,
+		name: 'Filler_Polar6',
+		data: F_Polar6,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar7 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar7.length,
+		name: 'Filler_Polar7',
+		data: F_Polar7,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar8 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar8.length,
+		name: 'Filler_Polar8',
+		data: F_Polar8,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar9 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar9.length,
+		name: 'Filler_Polar9',
+		data: F_Polar9,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar10 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar10.length,
+		name: 'Filler_Polar10',
+		data: F_Polar10,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar11 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar11.length,
+		name: 'Filler_Polar11',
+		data: F_Polar11,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar12 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar12.length,
+		name: 'Filler_Polar12',
+		data: F_Polar12,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar13 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar13.length,
+		name: 'Filler_Polar13',
+		data: F_Polar13,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+	}
+);
+const Filler_Polar14 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar14.length,
+		name: 'Filler_Polar14',
+		data: F_Polar14,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar15 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar15.length,
+		name: 'Filler_Polar15',
+		data: F_Polar15,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar16 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar16.length,
+		name: 'Filler_Polar16',
+		data: F_Polar16,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar17 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar17.length,
+		name: 'Filler_Polar17',
+		data: F_Polar17,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Polar18 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Polar18.length,
+		name: 'Filler_Polar18',
+		data: F_Polar18,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+//What Questions
+const Filler_What1 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What1.length,
+		name: 'Filler_What1',
+		data: F_What1,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What2 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What2.length,
+		name: 'Filler_What2',
+		data: F_What2,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What3 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What3.length,
+		name: 'Filler_What3',
+		data: F_What3,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What4 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What4.length,
+		name: 'Filler_What4',
+		data: F_What4,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What5 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What5.length,
+		name: 'Filler_What5',
+		data: F_What5,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What6 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What6.length,
+		name: 'Filler_What6',
+		data: F_What6,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What7 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What7.length,
+		name: 'Filler_What7',
+		data: F_What7,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What8 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What8.length,
+		name: 'Filler_What8',
+		data: F_What8,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What9 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What9.length,
+		name: 'Filler_What9',
+		data: F_What9,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What10 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What10.length,
+		name: 'Filler_What10',
+		data: F_What10,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What11 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What11.length,
+		name: 'Filler_What11',
+		data: F_What11,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What12 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What12.length,
+		name: 'Filler_What12',
+		data: F_What12,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What13 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What13.length,
+		name: 'Filler_What13',
+		data: F_What13,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What14 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What14.length,
+		name: 'Filler_What14',
+		data: F_What14,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What15 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What15.length,
+		name: 'Filler_What15',
+		data: F_What15,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What16 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What16.length,
+		name: 'Filler_What16',
+		data: F_What16,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What17 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What17.length,
+		name: 'Filler_What17',
+		data: F_What17,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_What18 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_What18.length,
+		name: 'Filler_What18',
+		data: F_What18,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+//HowMany questions
+const Filler_HowMany1 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM1.length,
+		name: 'Filler_HowMany1',
+		data: F_HM1,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany2 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM2.length,
+		name: 'Filler_HowMany2',
+		data: F_HM2,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany3 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM3.length,
+		name: 'Filler_HowMany3',
+		data: F_HM3,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany4 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM4.length,
+		name: 'Filler_HowMany4',
+		data: F_HM4,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany5 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM5.length,
+		name: 'Filler_HowMany5',
+		data: F_HM5,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany6 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM6.length,
+		name: 'Filler_HowMany6',
+		data: F_HM6,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany7 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM7.length,
+		name: 'Filler_HowMany7',
+		data: F_HM7,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany8 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM8.length,
+		name: 'Filler_HowMany8',
+		data: F_HM8,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany9 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM9.length,
+		name: 'Filler_HowMany9',
+		data: F_HM9,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany10 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM10.length,
+		name: 'Filler_HowMany10',
+		data: F_HM10,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany11 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM11.length,
+		name: 'Filler_HowMany11',
+		data: F_HM11,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany12 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM12.length,
+		name: 'Filler_HowMany12',
+		data: F_HM12,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany13 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM13.length,
+		name: 'Filler_HowMany13',
+		data: F_HM13,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany14 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM14.length,
+		name: 'Filler_HowMany14',
+		data: F_HM14,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany15 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM15.length,
+		name: 'Filler_HowMany15',
+		data: F_HM15,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany16 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM16.length,
+		name: 'Filler_HowMany16',
+		data: F_HM16,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany17 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM17.length,
+		name: 'Filler_HowMany17',
+		data: F_HM17,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_HowMany18 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_HM18.length,
+		name: 'Filler_HowMany18',
+		data: F_HM18,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+//Did Questions
+const Filler_Did1 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did1.length,
+		name: 'Filler_Did1',
+		data:F_Did1,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did2 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did2.length,
+		name: 'Filler_Did2',
+		data:F_Did2,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did3 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did3.length,
+		name: 'Filler_Did3',
+		data:F_Did3,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did4 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did4.length,
+		name: 'Filler_Did4',
+		data:F_Did4,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did5 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did5.length,
+		name: 'Filler_Did5',
+		data:F_Di5,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did6 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did6.length,
+		name: 'Filler_Did6',
+		data:F_Did6,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did7 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did7.length,
+		name: 'Filler_Did7',
+		data:F_Did7,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did8 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did8.length,
+		name: 'Filler_Did8',
+		data:F_Did8,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did9 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did9.length,
+		name: 'Filler_Did9',
+		data:F_Did9,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did10 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did10.length,
+		name: 'Filler_Did10',
+		data:F_Did10,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did11 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did11.length,
+		name: 'Filler_Did11',
+		data:F_Did11,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did12 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did12.length,
+		name: 'Filler_Did12',
+		data:F_Did12,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did13 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did13.length,
+		name: 'Filler_Did13',
+		data:F_Did13,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did14 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did14.length,
+		name: 'Filler_Did14',
+		data:F_Did14,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did15 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did15.length,
+		name: 'Filler_Did15',
+		data:F_Did15,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did16 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did16.length,
+		name: 'Filler_Did16',
+		data:F_Did16,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did17 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did17.length,
+		name: 'Filler_Did17',
+		data:F_Did17,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+const Filler_Did18 = magpieViews.view_generator(
+	"forced_choice", 
+	//config information
+	{
+		trials: F_Did18.length,
+		name: 'Filler_Did18',
+		data:F_Did18,
+	},
+	{
+		answer_container_generator: function (config, CT) {
+        return `<div class='magpie-view-answer-container'>
+                    <p class='magpie-view-question'>${config.data[CT].question}</p>
+                    <label for='o1' class='magpie-response-buttons'>${config.data[CT].option1}</label>
+                    <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
+                </div>`;
+		}
+	}
+);
+
 
 //Answers
 
