@@ -111,8 +111,7 @@ const Polar1 = magpieViews.view_generator(
 	{
 		trials: info_Pol1.length,
 		name: 'Polar1',
-		data: info_Pol1
-		
+		data: info_Pol1,
 	},
 	{
 		answer_container_generator: function (config, CT) {
@@ -2515,7 +2514,6 @@ const Filler_Polar13 = magpieViews.view_generator(
                     <input type='radio' name='answer' id='o1' value=${config.data[CT].option1} />
                 </div>`;
 		}
-	}
 	}
 );
 const Filler_Polar14 = magpieViews.view_generator(
