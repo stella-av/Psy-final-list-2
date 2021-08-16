@@ -591,7 +591,7 @@ $("document").ready(function() {
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "debug",
+            deployMethod: "directLink",
             contact_email: "mvillaavila@uos.de",
             //prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
@@ -599,6 +599,7 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
+                
                 intro.name,
                 instructions.name,
                 What1.name,               
@@ -655,7 +656,20 @@ $("document").ready(function() {
                 Filler_HowMany15.name,
                 Filler_Answer61.name,
                 Filler_INF61.name,
+                
+            ],
+            
+             // Possible styles are "default", "separate" and "chunks"
+            style: "default",
+            width: 100
+        }
+    });
+});
 
+
+
+// was repeated
+            /*
             // COND 5 (howmany comp)
 
             //sentence 6
@@ -1127,12 +1141,7 @@ $("document").ready(function() {
              Filler_Answer9,
              Filler_INF9,
 
+             
             post_test,
             thanks,
-            ],
-             // Possible styles are "default", "separate" and "chunks"
-            style: "default",
-            width: 100
-        }
-    });
-});
+            */
