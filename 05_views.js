@@ -29,7 +29,9 @@ const instructions = magpieViews.view_generator("instructions", {
   If another word appears, the last one will hide.
   <br>
   The third sentence will be the Judges conclusion. 
-  You'll have to check on a scala of 1 to 5, how much you agree or disagree with the judges conclusion.`,
+  You'll have to check on a scala of 1 to 5, how much you agree or disagree with the judges conclusion.
+  <br>
+  Please do not close the window until you are done with the experiment, otherwise your data will not be saved.`,
   buttonText: 'go to trials'
 });
 
