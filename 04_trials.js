@@ -1,28 +1,6 @@
-// In this file you can specify the trial data for your experiment
-
-/*
-//Trial info for self-paced-reading task
-const trial_info_self = [
-    {
-        QUD: "The judge asks: 'What did you see under the bed?' The witness responds",
-        sentence: "all | of the | yellow marbles | are | inside | the case.'",
-        option1: "Next",
-    },
-];
-
-//Trial info for validiy task
-const third_screen = [
-    {
-        optionLeft: "agree",
-        optionRight: "disagree",
-        QUD: "Judges answer",
-        question: "Do you agree with the judge?",
-
-    }
-];
-*/
-
 //MAIN TRIALS **CORRECT ORDER**
+
+//Screen 1
 
 //POLAR QUD 
 const info_Pol1 = [
@@ -243,6 +221,8 @@ const info_HM12 = [
 		question: "How many of the screams did you hear in the kitchen?",
     }
 ];
+
+//Screen 2
 
 //SUP Answers
 const trial_info_SUP1 = [
@@ -498,6 +478,9 @@ const trial_info_COMP18 = [
         option1: "Next",
     },
 ];
+
+//Screen 3
+
 //Inferences
 const trial_info_INF1 = [
     {
@@ -824,13 +807,12 @@ const trial_info_INF36 = [
     }
 ];
 
+
 // FILLER ITEMS **CORRECT**
 
-//Screen1
+//Screen 1
 
-// QUD
-
-//Polar
+//Polar Questions
 const F_Polar1 = [
      {
         option1: "Next",
@@ -939,7 +921,7 @@ const F_Polar18 = [
 		question: "Did you hear nearly ten cars on the street?",
      }
 ];
-// What
+//What Questions
 const F_What1 = [
     {
         option1: "Next",
@@ -1048,7 +1030,7 @@ const F_What18 = [
 		question: "What did you hear on the street?",
     }
 ];
-//How Many
+//How Many Questions
 const F_HM1 = [
     {
         option1: "Next",
@@ -1157,7 +1139,7 @@ const F_HM18 = [
 		question: "How many cars did you hear on the street?",
     }
 ];
-// Did
+//Did Questions
 const F_Did1 = [
     {
         option1: "Next",
@@ -1267,8 +1249,9 @@ const F_Did18 = [
     }
 ];
 
-//Answers
+//Screen 2
 
+//Answers
 const Filler_Ans1= [
     {
         QUD: "The witness responds:",
@@ -1774,8 +1757,9 @@ const Filler_Ans72= [
     },
 ];
 
-//Inferences
+//Screen 3
 
+//Inferences
 const Filler_info1 = [
     {
         optionLeft: "not justified at all",
@@ -2438,6 +2422,3 @@ const Filler_info72 = [
         rating: "1",
     }
 ];
-
-
-
